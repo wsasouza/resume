@@ -94,6 +94,11 @@ body {
   margin-bottom: 20px;
 }
 
+.text {
+  color: #fff;
+  font-weight: 300;
+}
+
 .contact_info ul {
   position: relative;
 }
@@ -112,15 +117,15 @@ body {
   color: #03a9f4;
 }
 
-.contact_info ul li span {
-  color: #fff;
-  font-weight: 300;
-}
-
-.contact_info ul li span a {
+.contact_info ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
+  transition: 0.5s;
+}
+
+.contact_info ul li a:hover {
+  opacity: 0.6;
 }
 
 .contact_info.education li {
@@ -184,3 +189,27 @@ body {
 p {
   color: #333;
 }
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year_company {
+  min-width: 150px;
+}
+
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
