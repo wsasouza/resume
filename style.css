@@ -7,8 +7,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --color-bg: #dad0cd;
+  --color-bg-left: #222;
+  --color-text-title-left: #fff;
+  --color-text-left: #fdfdfd;
+
+  --color-accent: #ff9100;
+  --color-aux-left: #211108;
+  --color-aux-right: #e7d6c4;
+
+  --color-bg-right: #fff;
+  --color-text-title-right: #191919;
+  --color-text-subtitle-right: #908a84; 
+  --color-text-right: #333;
+
+}
+
 body {
-  background: #84d0ee;
+  background: var(--color-bg);
 
   display: flex;
   justify-content: center;
@@ -22,7 +39,7 @@ body {
   width: 100%;
   max-width: 1000px;
   min-height: 1000px;
-  background: #fff;
+  background: var(--color-bg-right);
   margin: 50px;
 
   display: grid;
@@ -34,7 +51,7 @@ body {
 /* Left Side */
 .container .left_side {
   position: relative;
-  background: #003147;
+  background: var(--color-bg-left);
   padding: 40px;
 }
 
@@ -46,7 +63,7 @@ body {
   align-items: center;
 
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid var(--color-accent);
 }
 
 .profile_text .img_box {
@@ -67,7 +84,7 @@ body {
 }
 
 .profile_text h2 {
-  color: #fff;
+  color: var(--color-text-title-left);
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 20px;
@@ -87,7 +104,7 @@ body {
 }
 
 .title {
-  color: #fff;
+  color: var(--color-text-title-left);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -95,7 +112,7 @@ body {
 }
 
 .text {
-  color: #fff;
+  color: var(--color-text-left);
   font-weight: 300;
 }
 
@@ -114,18 +131,18 @@ body {
   display: inline-block;
   width: 30px;
   font-size: 18px;
-  color: #03a9f4;
+  color: var(--color-accent);
 }
 
 .contact_info ul li a {
-  color: #fff;
+  color: var(--color-text-left);
   text-decoration: none;
   font-weight: 300;
   transition: 0.5s;
 }
 
 .contact_info ul li a:hover {
-  opacity: 0.6;
+  opacity: 0.6;  
 }
 
 .contact_info.education li {
@@ -134,16 +151,16 @@ body {
 
 .contact_info.education h5 {
   font-weight: 500;
-  color: #03a9f4;
+  color: var(--color-accent);
 }
 
 .contact_info.education h4:nth-child(2) {
-  color: #fff;
+  color: var(--color-text-title-left);
   font-weight: 500;
 }
 
 .contact_info.education h4 {
-  color: #fcfcfc;  
+  color: var(--color-text-left);  
   font-weight: 300;
 }
 
@@ -151,7 +168,7 @@ body {
   position: relative;
   width: 100%;
   height: 6px;
-  background: #081921;
+  background: var(--color-aux-left);
   display: block;
   margin-top: 5px;
 }
@@ -161,13 +178,13 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background: #03a9f4;
+  background: var(--color-accent);
 }
 
 /* Right Side */
 .container .right_side {
   position: relative;
-  background: #fff;
+  background: var(--color-bg-right);
   padding: 40px;
 }
 
@@ -180,14 +197,14 @@ body {
 }
 
 .title2 {
-  color: #003147;
+  color: var(--color-text-title-right);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
 p {
-  color: #333;
+  color: var(--color-text-right);
 }
 
 .about .box {
@@ -202,14 +219,14 @@ p {
 
 .about .box .year_company h5 {
   text-transform: uppercase;
-  color: #848c90;
+  color: var(--color-text-subtitle-right);
   font-weight: 600;
   margin-right: 10px;
 }
 
 .about .box .text h4 {
   text-transform: uppercase;
-  color: #2a7da2;
+  color: var(--color-accent);
   font-size: 16px;
 }
 
@@ -225,7 +242,7 @@ p {
 
 .skills .box h4 {
   text-transform: uppercase;
-  color: #848c99;
+  color: var(--color-text-subtitle-right);
   font-weight: 500;
 }
 
@@ -233,7 +250,7 @@ p {
   position: relative;
   width: 100%;
   height: 10px;
-  background: #f0f0f0;
+  background: var(--color-aux-right);
 }
 
 .skills .box .percent div {
@@ -241,7 +258,7 @@ p {
   top: 0;
   left: 0;
   height: 100%;
-  background: #03a9f4;
+  background: var(--color-accent);
 }
 
 .others ul {
@@ -251,13 +268,13 @@ p {
 
 .others ul li {
   list-style: none;
-  color: #333;
+  color: var(--color-text-right);
   font-weight: 500;
   margin: 10px 0;
 }
 
 .others ul li .fa {
-  color: #03a9f4;
+  color: var(--color-accent);
   font-size: 18px;
   width: 20px;
   margin-right: 5px;
