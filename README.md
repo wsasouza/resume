@@ -2,6 +2,8 @@
 
 ### My CV. Looking for a job as a software developer.
 
+<br>
+
 ## Technologies:
 <br>
 <img src="https://img.shields.io/static/v1?label=HTML&message=5&color=E34F26&style=plastic&logo=html5"/>
