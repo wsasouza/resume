@@ -9,19 +9,19 @@
 
 :root {
   --color-bg: #dad0cd;
-  --color-bg-left: #222;
+
+  --color-bg-left: #0e0e0e;
   --color-text-title-left: #fff;
-  --color-text-left: #fdfdfd;
+  --color-text-left: #ffe9cc;
 
   --color-accent: #ff9100;
-  --color-aux-left: #211108;
+  --color-aux-left: #211b14;
   --color-aux-right: #e7d6c4;
 
   --color-bg-right: #fff;
-  --color-text-title-right: #191919;
-  --color-text-subtitle-right: #908a84; 
-  --color-text-right: #333;
-
+  --color-text-title-right: #090908;
+  --color-text-subtitle-right: #897d6d; 
+  --color-text-right: #282623;
 }
 
 body {
@@ -41,6 +41,7 @@ body {
   min-height: 1000px;
   background: var(--color-bg-right);
   margin: 50px;
+  overflow: hidden;
 
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -243,7 +244,7 @@ p {
 .skills .box h4 {
   text-transform: uppercase;
   color: var(--color-text-subtitle-right);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .skills .box .percent {
